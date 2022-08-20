@@ -6,7 +6,7 @@
 /*   By: vfiszbin <vfiszbin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 13:15:46 by vfiszbin          #+#    #+#             */
-/*   Updated: 2022/08/20 14:02:09 by vfiszbin         ###   ########.fr       */
+/*   Updated: 2022/08/20 16:36:44 by vfiszbin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,5 +86,5 @@ int main(void)
 	else
 		std::cout << "Element not found" << std::endl;
 
-	
+	return 0;
 }
