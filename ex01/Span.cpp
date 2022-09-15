@@ -6,7 +6,7 @@
 /*   By: vfiszbin <vfiszbin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 14:16:16 by vfiszbin          #+#    #+#             */
-/*   Updated: 2022/08/20 17:43:08 by vfiszbin         ###   ########.fr       */
+/*   Updated: 2022/09/15 10:26:40 by vfiszbin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,13 @@ Span::Span(Span const & s)
 
 Span & Span::operator=(Span const & s)
 {
-	_N = s._N;
-	_nb = s._nb;
-	_ints.clear();
-	_ints = s._ints;
+	if (this != &s)
+	{
+		_N = s._N;
+		_nb = s._nb;
+		_ints.clear();
+		_ints = s._ints;
+	}
 	
 	return *this;
 }
